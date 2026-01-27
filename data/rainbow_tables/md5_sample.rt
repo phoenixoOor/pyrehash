@@ -1,0 +1,8 @@
+# Simple pre-computed hash-password mapping for MD5 (Demonstration only)
+# Format: hash,password
+e10adc3949ba59abbe56e057f20f883e,123456
+5f4dcc3b5aa765d61d8327deb882cf99,password
+098f6bcd4621d373cade4e832627b4f6,test
+21232f297a57a5a743894a0e4a801fc3,admin
+827ccb0eea8a706c4c34a16891f84e7b,12345
+fc3ff98e8c6a0d3087d515c0473f8677,qwerty
