@@ -25,6 +25,7 @@ class BruteForceAttack(AttackEngine):
             if self.algorithm.verify(password, self.target_hash, salt, salt_position):
                 self.result = password
                 self.is_running = False
+                progress.complete()
                 break
                 
         progress.close()

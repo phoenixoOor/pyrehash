@@ -115,5 +115,12 @@ def list_results():
         for r in results:
             print(f"Hash: {r.target.hash_value} | Password: {r.password}")
 
+@app.command()
+def clear_results():
+    """Clear all results and targets from the database."""
+    if typer.confirm("Are you sure you want to clear all results?"):
+        storage.clear_results()
+        log_success("Database cleared.")
+
 if __name__ == "__main__":
     app()

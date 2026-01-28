@@ -10,6 +10,11 @@ class ProgressManager:
     def update(self, n: int = 1):
         self.pbar.update(n)
 
+    def complete(self):
+        """Force the progress bar to 100%."""
+        self.pbar.n = self.pbar.total
+        self.pbar.refresh()
+
     def close(self):
         self.pbar.close()
 

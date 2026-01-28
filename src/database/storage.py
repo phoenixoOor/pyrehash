@@ -45,3 +45,9 @@ class Storage:
                 attack_session.progress = progress
                 attack_session.status = status
                 session.commit()
+
+    def clear_results(self):
+        with self.Session() as session:
+            session.query(Result).delete()
+            session.query(HashTarget).delete()
+            session.commit()
